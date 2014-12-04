@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'project.h'
 **
-** Created: Sat Nov 29 20:47:27 2014
+** Created: Wed Dec 3 20:09:34 2014
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -32,16 +32,16 @@ static const uint qt_meta_data_Project[] = {
 
  // slots: signature, parameters, type, tag, flags
        9,    8,    8,    8, 0x0a,
-      18,    8,    8,    8, 0x0a,
-      29,    8,    8,    8, 0x0a,
-      38,    8,    8,    8, 0x0a,
+      20,    8,    8,    8, 0x0a,
+      31,    8,    8,    8, 0x0a,
+      42,    8,    8,    8, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_Project[] = {
-    "Project\0\0dodata()\0doseason()\0xiaobo()\0"
-    "doBp()\0"
+    "Project\0\0dozhishu()\0doseason()\0"
+    "doxiaobo()\0doBp()\0"
 };
 
 const QMetaObject Project::staticMetaObject = {
@@ -73,9 +73,9 @@ int Project::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: dodata(); break;
+        case 0: dozhishu(); break;
         case 1: doseason(); break;
-        case 2: xiaobo(); break;
+        case 2: doxiaobo(); break;
         case 3: doBp(); break;
         default: ;
         }

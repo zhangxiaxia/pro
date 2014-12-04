@@ -6,10 +6,12 @@
 #include <QtGui/QMessageBox>
 #include <QTimer>
 #include "para.h"
+#include <QString.h>
+#include <QMap>
 #include "sqlHelper.h"
 const int NN = 100;
 struct TimeJia{
-	String timesall;
+	QString timess;
 	double jiac;
 };
 class Project : public QMainWindow
@@ -21,7 +23,10 @@ public:
 	void setData();
 	QTimer *timer;
 	~Project();
-
+	void zhishu();
+	void season();
+	void xiaobo();
+	void BP();
 private:
 	Ui::ProjectClass ui;
 	QSqlQuery query;
@@ -31,12 +36,11 @@ private:
 	double smo2[NN];
 	double smo3[NN];
 	int lenjiachun;
-	String getString(int n);
+	QString getString(int n);
 public slots:
-	void dodata();
+	void dozhishu();
 	void doseason();
-	
-	void xiaobo();
+	void doxiaobo();
 	void doBp();
 };
 
